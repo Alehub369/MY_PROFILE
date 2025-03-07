@@ -1,0 +1,251 @@
+.main_logo {
+    width: 100px;
+    border-radius: 10px;
+}
+.network_logo
+{
+    width: 45px;
+    border-radius: 10px;
+}
+
+@media (max-width: 460px) {
+    .title_section_image {
+        width: 270px;
+    }
+}
+
+
+/* Common */
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Header */
+.header_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_section {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    padding-bottom: 60px;
+    
+    background-image: linear-gradient(to right, var(--secondary-color) , var(--tertiary-color));
+    border-radius: var(--border-radius-size);
+    -webkit-animation: filter-animation 8s infinite;
+    animation: filter-animation 8s infinite;
+}
+@-webkit-keyframes filter-animation {
+    0% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    
+    50% {
+      -webkit-filter: hue-rotate(100deg);
+    }
+    
+    100% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+  }
+  
+  @keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    
+    50% {
+      filter: hue-rotate(100deg);
+    }
+    
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  }
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--space-size);
+}
+
+
+.row {
+    display: flex;
+    flex-grow:1;
+    margin: var(--space-size);
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: var(--space-size);
+    height: 500px;
+
+}
+
+
+.cell_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 22px;
+    background: url('./images/Full_Stack_Logo_2.jpeg') rgba(29, 14, 21, 0.3);
+    background-size: 25%;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center 90%;
+
+    padding: var(--space-size);
+}
+.cell_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 22px;
+    background: url('./images/Logo-USC.png') rgba(29, 15, 14, 0.3);
+    background-size: 25%;
+    background-position: center 90%;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    padding: var(--space-size);
+}
+@media (max-width: 1000px) {
+    .row {
+        height: 550px;
+    }
+}
+@media (max-width: 900px) {
+    .row {
+        height: 600px;
+    }
+}
+@media (max-width: 800px) {
+    .row {
+        height: 650px;
+    }
+}
+
+@media (max-width: 700px) {
+    .row {
+        height: 700px;
+    }
+}
+@media (max-width: 650px) {
+    .row {
+        height: 750px;
+    }
+}
+@media (max-width: 600px) {
+    .about_me {
+        flex-direction: column;
+    }
+    .about_me {
+        height: 1100px;
+    }
+    .main_logo {
+        width: 70px;
+        border-radius: 7px;
+    }
+    .network_logo
+{
+    width: 30px;
+    border-radius: 7px;
+}
+}
+
+@media (max-width: 500px) {
+    .about_me {
+        height: 1200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .about_me {
+        height: 1300px;
+    }
+}
+@media (max-width: 425px) {
+    .about_me {
+        height: 1400px;
+    }
+
+}
+@media (max-width: 380px) {
+    .about_me {
+        height: 1500px;
+    }
+}
+@media (max-width: 350px) {
+    .about_me {
+        height: 1600px;
+    }
+}
+
+
+.cards {
+    display: flex;
+  }
+
+@media (max-width: 900px) {
+    .cards {
+       flex-direction: column;
+      }
+}
+
+.card-first {
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;   
+}
+
+.card-second {
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.card-third {
+    order: 3;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.card-fouth {
+    order: 4;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.short_term_goals {
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+.long_term_goals {
+    padding: 10px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    align-items: flex-end;
+    margin: var(--space-size) calc(var(--space-size) * 2);
+}
